@@ -1,0 +1,118 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic|Roboto+Slab">
+    <link rel="stylesheet" href="/font/icons.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <div id="header-container"><div id="header">
+      <div id="controls">
+        <div class="caret"></div>
+        <div id="read-controls">
+          <div id="dark" class="toggle"><i class="icon-dark"></i></div>
+          <div id="align" class="toggle"><i class="icon-left"></i></div>
+          <div id="serif" class="toggle"><span class="sans">A</span><span class="serif">A</span></div>
+          <div id="size">
+            <i class="icon-size"></i>
+            <span id="size-plus">&plus;</span>
+            <span id="size-current">100%</span>
+            <span id="size-minus">&minus;</span>
+          </div>
+          <div id="height">
+            <i class="icon-height"></i>
+            <span id="height-plus">&plus;</span>
+            <span id="height-current">1.5</span>
+	    <span id="height-minus">&minus;</span>
+          </div>
+          <div id="zoom">
+            <i class="icon-zoom"></i>
+            <span id="zoom-plus">&plus;</span>
+            <span id="zoom-current">100%</span>
+	    <span id="zoom-minus">&minus;</span>
+          </div>
+        </div>
+        <div id="sub-controls">
+          <a href="/atom.xml">Atom Feed</a>
+          <input type="text" readonly value="http://pen.adamhovorka.com/atom.xml" onclick="this.select()">
+          <div id="email-label">Email Digest</div>
+          <form action="/api/subscribe" method="POST">
+            <span>[[Not done yet. Sorry.]]</span>
+            <input type="email" name="email" placeholder="Email" disabled>
+            <input type="radio" name="when" id="instant" value="instant" checked><label for="instant">Instant</label>
+            <input type="radio" name="when" id="daily" value="daily"><label for="daily">Daily</label>
+            <input type="radio" name="when" id="weekly" value="weekly"><label for="weekly">Weekly</label>
+            <input type="submit" value="Subscribe" disabled>
+          </form>
+        </div>
+      </div>
+      <div id="menu">
+        <span id="read">Aa</span>
+        <span id="sub"><i class="icon-rss"></i></span>
+      </div>
+      <img src="/img/quote.png" class="logo">
+      <img src="/img/quote-dark.png" class="logo-dark">
+      <h1>Pen</h1>
+    </div></div>
+    <!--div id="page-nav">
+      <div id="nav-top"><i class="icon-up"></i></div>
+      <div id="nav-bottom"><i class="icon-down"></i></div>
+    </div-->
+    <div id="content">
+      {% for post in site.posts reversed %}
+      <div class="post" data-index="{{ forloop.index }}">
+        <a name="{{ forloop.index }}" class="anchor"></a>
+        <div class="date">{{ post.date | date_to_string }}</div>
+        <a href="#{{ forloop.index }}" class="section"><h2>{{ post.title }}</h2></a>
+        {{ post.content }}
+      </div>
+      <hr>
+      {% endfor %}
+    </div>
+    <div id="footer">
+      To be continued...
+    </div>
+  </body>
+  <script type="template" id="section-template">
+    <a class="comments-button" id="cb-#{this.n}">Comments (#{this.ncomments})</a>
+    <div class="comments" id="cs-#{this.n}">
+      <h3>Comments</h3>
+      <div id="csc-#{this.n}">
+        #{this.comments}
+      </div>
+      <a class="add-comment-button" id="acb-#{this.n}">Add a comment...</a>
+      <form class="add-comment" id="ac-#{this.n}" action="http://penapi.adamhovorka.com/comments/#{this.n}/new" method="POST">
+        <input type="text" name="name" placeholder="Name / Email" required>
+        <input type="text" name="captcha" placeholder='Type "15" as a word.' required>
+        <textarea name="content" placeholder="Write your comment here." required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </script>
+  <script type="template" id="comment-template">
+    <p class="comment">
+      <span class="flag" id="#{this.n}-#{this.i}">
+        <i class="icon-flag"></i>
+      </span>
+      <span class="meta">#{this.name} &middot; #{this.date}</span>
+      &middot; #{this.content}
+    </p>
+  </script>
+  <script src="/js/jquery.js"></script>
+  <script src="/js/style.js"></script>
+  <script src="/js/content.js"></script>
+  <script> 
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-38761954-4', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>
