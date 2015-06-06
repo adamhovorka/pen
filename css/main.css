@@ -444,7 +444,7 @@ html.serif p.comment .meta { font-family: "Roboto", sans-serif; }
 
 p.comment .flag {
   display: none;
-  margin: 0 0 0 -18pt;
+  margin: 0 -3pt 0 -18pt;
   padding: 0 2.6pt 0 0;
   cursor: pointer;
 }
