@@ -43,13 +43,9 @@
           <a href="/atom.xml">Atom Feed</a>
           <input type="text" readonly value="http://pen.adamhovorka.com/atom.xml" onclick="this.select()">
           <div id="email-label">Email Digest</div>
-          <form action="/api/subscribe" method="POST">
-            <span>[[Not done yet. Sorry.]]</span>
-            <input type="email" name="email" placeholder="Email" disabled>
-            <input type="radio" name="when" id="instant" value="instant" checked><label for="instant">Instant</label>
-            <input type="radio" name="when" id="daily" value="daily"><label for="daily">Daily</label>
-            <input type="radio" name="when" id="weekly" value="weekly"><label for="weekly">Weekly</label>
-            <input type="submit" value="Subscribe" disabled>
+          <form action="http://penapi.adamhovorka.com/subscribe" method="POST">
+            <input type="email" name="email" placeholder="Email">
+            <input type="submit" value="Subscribe">
           </form>
         </div>
       </div>
