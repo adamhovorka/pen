@@ -187,7 +187,7 @@ html.dark #size-plus.disabled:hover, html.dark #height-plus.disabled:hover, html
 html.dark #sub-controls a, html.dark #sub-controls #email-label { color: #B0AEAE; }
 #sub-controls a:hover, html.dark #sub-controls a:hover { color: #8A0000; text-decoration: underline; }
 
-#sub-controls input[type=text], #sub-controls input[type=email] {
+#sub-controls input {
   border: 1px solid #B0AEAE;
   background-color: transparent;
   font-family: "Roboto", sans-serif;
@@ -198,6 +198,8 @@ html.dark #sub-controls a, html.dark #sub-controls #email-label { color: #B0AEAE
   width: 100%;
   cursor: text;
   color: #474747;
+  display: block;
+  border-radius: 3px;
 }
 
 html.dark #sub-controls input[type=text], html.dark #sub-controls input[type=email] {
@@ -205,41 +207,18 @@ html.dark #sub-controls input[type=text], html.dark #sub-controls input[type=ema
   color: #B0AEAE;
 }
 
-#sub-controls input {
-  display: block;
-  border-radius: 3px;
-}
-
-#sub-controls input[type=radio] {
-  display: none;
-}
-
-#sub-controls input[type=radio] + label {
-  display: block;
-  float: left;
-  width: 33.3%;
-  text-align: center;
-  border-radius: 3px;
-  padding: 2pt 0;
-  cursor: pointer;
-  margin-bottom: 4pt;
-}
-
-#sub-controls input[type=radio]:checked + label {
-  background-color: #8A0000;
-  color: #fff;
-}
-
 #sub-controls input[type=submit] {
-  width: 100%;
-  background-color: transparent;
-  font-size: 11pt;
-  padding: 3pt 0;
-  margin-bottom: 3pt;
-  border: 1px solid #B0AEAE;
-  color: #474747;
+  background-color: #8A0000;
+  border-color: #8A0000;
+  /*padding: 3pt 0;
+  margin-bottom: 3pt;*/
+  color: #fff;
   cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.25s;
 }
+
+#sub-controls input[type=submit]:hover { opacity: 1; }
 
 html.dark #sub-controls input[type=submit] {
   border-color: #474747;
