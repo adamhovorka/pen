@@ -184,6 +184,10 @@ html.dark #size-plus.disabled:hover, html.dark #height-plus.disabled:hover, html
   margin-bottom: 4pt;
 }
 
+#sub-controls #email-label {
+  margin-top: 12pt;
+}
+
 html.dark #sub-controls a, html.dark #sub-controls #email-label { color: #B0AEAE; }
 #sub-controls a:hover, html.dark #sub-controls a:hover { color: #8A0000; text-decoration: underline; }
 
