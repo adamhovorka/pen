@@ -4,7 +4,6 @@ title: Quick Review
 published: true
 ---
 
-
 You're about to grab for a paper cup when you remember that they're out because Sean—_\*scoff\* neat freak_—decided to use them to hold all of the components you had lying around your solder station. You reach over and unceremoniously upend the one holding a dozen 555s.
 
 As you're filling it, your stomach growls, so you reach over and pull a Hot Pocket out of the fridge. You slide it into the little reflector case thingy and open up the microwave. You use the little tape markers you've put on the base to position it about 130mm from the left inside edge. After a month of <s>screwing around</s> intense science you've determined that that's as close as you can get to optimal with this microwave's awkward resonance.
