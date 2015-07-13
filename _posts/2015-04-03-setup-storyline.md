@@ -6,7 +6,7 @@ published: true
 
 Welcome, reader. I'm Adam, the GM. This, "Pen," is an interactive story, of sorts; I'll be writing everything in these large blocks of text, but you'll be controlling what happens by writing in the comments below each post.
 
-This is going to be pretty free-form. In designing and writing this, I'm aiming for consistency and scope, which means any loopholes you spot are free to be exploited—in fact, they may be intentional. Nag me about any details I neglect to mention that you think might give you an edge in a situation. If you can make a convincing argument that something should happen, I'll roll with it. If I don't, point it out and shame me about it. I'm serious. This designed to be improv practice for me as much as entertaining for you, the readers. If I'm doing something wrong, tell me.
+This is going to be pretty free-form. In designing and writing this, I'm aiming for consistency and scope, which means any loopholes you spot are free to be exploited—in fact, they may be intentional. Nag me about any details I neglect that you think might give you an edge in a situation. If you can make a convincing argument that something should happen, I'll roll with it. If I don't, point it out and shame me about it. I'm serious. This designed to be improv practice for me as much as entertaining for you, the readers. If I'm doing something wrong, tell me.
 
 Now, the first thing we need to do is pick a storyline to follow. I've prepared four worlds for you to choose from. Each has a unique setting/plot framework and a core mechanic. Choose wisely.
 
