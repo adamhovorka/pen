@@ -7,8 +7,9 @@ function AJAX(a,b,c,d){try{d=new(this.XMLHttpRequest||ActiveXObject)("MSXML2.XML
 // Pretty date formatting
 function todate(d) {
   d = new Date(d*1000);
+  var h = d.getHours()%12;
   return (d.getMonth()+1)+"/"+d.getDate()+"/"+d.getFullYear()+" "+
-    (d.getHours()%12)+":"+("100"+d.getMinutes()).slice(-2)+" "+["AM","PM"][Math.floor(d.getHours()/12)]; }
+    (h>0?h:12)+":"+("100"+d.getMinutes()).slice(-2)+" "+["AM","PM"][Math.floor(d.getHours()/12)]; }
 // }}}
 
 // {{{ Templates
