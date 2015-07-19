@@ -12,7 +12,7 @@ published: true
 
 "Yes, that is totally the cat hair and not the bundles of zip tied wires."
 
-Sean, who had emerged from the lab without your noticing, opens the driver door and takes his seat. He sets something on the floor before you get a good look at it.
+Sean, who had emerged from the lab without you noticing, opens the driver door and takes his seat. He sets something on the floor before you get a good look at it.
 
 Ali saw it, though. "You were all fluffed about being late, but you just *had* to find a lint roller? You're s&mdash;"
 
@@ -30,7 +30,7 @@ Without looking up, she tells you "I found an APK for a half-decent IDE on XDA a
 
 "Oh. My lappy's in the trunk, this was convenient, and I type basically as fast on here as I do on there. Custom keyboard, see?"
 
-Still not looking up from your wiry maze, she shoves the phone out at you for just long enough for you to see that half of the screen is flat black with a couple of small blue circles spaced randomly. "Yeah, I... sort of remember that. Wasn't it... red before?"
+Still not looking up from your wiry maze, she shoves the phone out at you for just long enough to see that half of the screen is flat black with a couple of small blue circles spaced randomly. "Yeah, I... sort of remember that. Wasn't it... red before?"
 
 "Mhm, sure..." she breathes absently, settling back into the 'zone' or whatever.
 
